@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body id="weatherBody" class="dja weatherBody">
+    <section class="dja padding weatherSection">
+      <article id="weatherArticle1" class="dja padding weatherArticle1">
+        <form id="weatherForm" class="dja padding weatherForm">
+          <input
+            id="weatherFormInput"
+            class="padding weatherFormInput"
+            type="text"
+            required
+            placeholder="Zone / Area"
+          />
+          <button class="weatherFormInputBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </article>
+      <article id="weatherArticle2" class="dja padding weatherArticle2">
+        <button
+          onclick="resetWeatherData()"
+          class="dja padding resetWeatherDataBtn"
+        >
+          &times;
+        </button>
+        <h1 id="weatherDegree" class="weatherDegree"></h1>
+        <h4 id="weatherType" class="weatherType"></h4>
+        <img id="weatherImages" class="weatherImages" />
+        <h1 id="weatherPlace" class="weatherPlace"></h1>
+        <div class="dja padding weatherDetail">
+          <div class="dja padding weatherDetailLeft">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="dja weatherMetaDetailLeft">
+              <h1 id="dropletSideDetails" class="dropletSideDetails"></h1>
+              <h1 class="dropletSideDetails">Humidity</h1>
+            </div>
+          </div>
+          <div class="dja padding weatherDetailRight">
+            <i class="fa-solid fa-wind"></i>
+            <div class="dja weatherMetaDetailRight">
+              <h1 id="windSideDetails" class="windSideDetails"></h1>
+              <h1 class="windSideDetails">Wind-Speed</h1>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/00472cec1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
